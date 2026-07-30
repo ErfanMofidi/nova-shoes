@@ -1,3 +1,38 @@
 *, body, html {
   font-family: "Clash Display", sans-serif;
 }
+
+.App {
+  background: no-repeat,
+    linear-gradient(
+      to right,
+      rgba(7,9,11,1),
+      rgba(7,9,11,.85),
+      rgba(7,9,11,1)
+    ),
+    url("./assets/hero-section/images\ \(4\).jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.explore-btn-p {
+  font-family: sans-serif;
+}
+#explore-btn {
+  box-shadow: 0 0 15px rgba(166, 221, 3, 0.6);
+}
+
+.x{
+  color: rgb(7, 9, 11);
+}
+
+.y {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+}
