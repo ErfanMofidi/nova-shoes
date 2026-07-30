@@ -20,14 +20,14 @@ export const Hero = () => {
 
 
   return (
-    <div id="hero" className="mt-24 flex flex-row px-16 h-[77vh] w-screen">
+    <div id="hero" className="mt-24 flex flex-row px-16 h-[77vh]">
       <div className="flex flex-col flex-wrap gap-8">
 
         <h1 className="text-[#ededed] text-7xl font-medium max-w-96">
           MOVE WITHOUT LIMITS.
         </h1>
 
-        <div className='text-sm text-[#5c5c5e]'>
+        <div className='text-sm text-[#71717a]'>
           <p>
             Engineered for performance.
           </p>
