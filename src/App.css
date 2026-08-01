@@ -50,3 +50,17 @@
     background-size: cover;
     background-position: center;
 }
+
+#display{
+      background: no-repeat,
+    linear-gradient(
+      to right,
+      rgba(17,18,20, 1),
+      rgba(7,9,11,.95),
+      rgba(7,9,11,1)
+    ),
+        url("./assets/display//ChatGPT\ Image\ Jul\ 30\,\ 2026\,\ 04_34_31\ PM.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
