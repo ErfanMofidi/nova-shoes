@@ -1,29 +1,30 @@
-*, body, html {
+*,
+body,
+html {
   font-family: "Clash Display", sans-serif;
 }
 
 .App {
   background: no-repeat,
-    linear-gradient(
-      to right,
-      rgba(7,9,11,1),
-      rgba(7,9,11,.90),
-      rgba(7,9,11,1)
-    ),
+    linear-gradient(to right,
+      rgba(7, 9, 11, 1),
+      rgba(7, 9, 11, .90),
+      rgba(7, 9, 11, 1)),
     url("./assets/hero-section/images\ \(4\).jfif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .explore-btn-p {
   font-family: sans-serif;
 }
+
 #explore-btn {
   box-shadow: 0 0 15px rgba(166, 221, 3, 0.6);
 }
 
-.x{
+.x {
   color: rgb(7, 9, 11);
 }
 
@@ -37,30 +38,38 @@
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
 }
 
-#section2-shoe-container{
-    background: no-repeat,
-    linear-gradient(
-      to right,
-      rgba(17,18,20, 0),
-      rgba(7,9,11,.0),
-      rgba(7,9,11,1)
-    ),
-        url("./assets/section-2/ChatGPT\ Image\ Jul\ 30\,\ 2026\,\ 01_53_26\ PM.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#section2-shoe-container {
+  background: no-repeat,
+    linear-gradient(to right,
+      rgba(17, 18, 20, 0),
+      rgba(7, 9, 11, .0),
+      rgba(7, 9, 11, 1)),
+    url("./assets/section-2/ChatGPT\ Image\ Jul\ 30\,\ 2026\,\ 01_53_26\ PM.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-#display{
-      background: no-repeat,
-    linear-gradient(
-      to right,
-      rgba(17,18,20, 1),
-      rgba(7,9,11,.95),
-      rgba(7,9,11,1)
-    ),
-        url("./assets/display//ChatGPT\ Image\ Jul\ 30\,\ 2026\,\ 04_34_31\ PM.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#display {
+  background: no-repeat,
+    linear-gradient(to right,
+      rgba(17, 18, 20, 1),
+      rgba(7, 9, 11, .95),
+      rgba(7, 9, 11, 1)),
+    url("./assets/display//ChatGPT\ Image\ Jul\ 30\,\ 2026\,\ 04_34_31\ PM.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#explore {
+  background: no-repeat,
+    linear-gradient(to right,
+      rgba(17, 18, 20, 1),
+      rgba(7, 9, 11, .95),
+      rgba(7, 9, 11, 1)),
+    url("./assets/explore/Group\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
