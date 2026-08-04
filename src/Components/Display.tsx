@@ -20,7 +20,7 @@ export const Display = () => {
 
     setTimeout(() => {
       setIsAnimating(false);
-    }, 701);
+    }, 200);
   };
 
   const whiteSlide = displayShoe === "white" ? 15 : isAnimating ? 99 : -99;
