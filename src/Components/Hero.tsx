@@ -6,9 +6,9 @@ import { useEffect, useState } from 'react'
 
 export const Hero = () => {
   const [carouselSlide, setCarouselSlide] = useState<number>(0)
-  const slide1 = carouselSlide === 0 ? 9.5 : carouselSlide === 1 ? 99 : -99;
-  const slide2 = carouselSlide === 1 ? 9.5 : carouselSlide === 2 ? 99 : -99;
-  const slide3 = carouselSlide === 2 ? 9.5 : carouselSlide === 0 ? 99 : -99;
+  const slide1 = carouselSlide === 0 ? 15 : carouselSlide === 1 ? 99 : -99;
+  const slide2 = carouselSlide === 1 ? 15 : carouselSlide === 2 ? 99 : -99;
+  const slide3 = carouselSlide === 2 ? 15 : carouselSlide === 0 ? 99 : -99;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -20,14 +20,14 @@ export const Hero = () => {
 
 
   return (
-    <div id="hero" className="mt-24 flex flex-row px-16 h-[77vh]">
-      <div className="flex flex-col flex-wrap gap-8">
+    <div id="hero" className="mt-24 flex flex-row px-16 h-[clamp(560px,77vh,100vh)]">
+      <div className="flex flex-col flex-nowrap gap-8">
 
-        <h1 className="text-[#ededed] text-7xl font-medium max-w-96">
+        <h1 className="text-[#ededed] text-8xl font-medium max-w-96">
           MOVE WITHOUT LIMITS.
         </h1>
 
-        <div className='text-sm text-[#71717a]'>
+        <div className='text-md text-[#71717a]'>
           <p>
             Engineered for performance.
           </p>
@@ -42,10 +42,11 @@ export const Hero = () => {
           <ArrowRight size={20} className='-rotate-45 relative top-0' />
         </button>
       </div>
+      
       <div className='h-screen w-fit overflow-x-clip relative top-[-30%] left-[0%] flex-1 flex flex-col overflow-y-hidden scroll-smooth'>
-        <img style={{ top: `${slide1}%` }} src={heroShoe} alt="shoe" className={`absolute left-[13.5%]  h-[85vh] transition-[top] ease-in-out duration-700 ${carouselSlide === 2 && "-z-10"}`} />
-        <img style={{ top: `${slide2}%` }} src={heroShoe2} alt="shoe" className={`absolute left-[13.5%] h-[85vh] transition-[top] ease-in-out duration-700 ${carouselSlide === 0 && "-z-10"}`} />
-        <img style={{ top: `${slide3}%` }} src={heroShoe3} alt="shoe" className={`absolute left-[13.5%] h-[85vh] transition-[top] ease-in-out duration-700 ${carouselSlide === 1 && "-z-10"}`} />
+        <img style={{ top: `${slide1}%` }} src={heroShoe} alt="shoe" className={`absolute left-[13.5%]  h-[clamp(420px,70vh,700px)] transition-[top] ease-in-out duration-700 ${carouselSlide === 2 && "-z-10"}`} />
+        <img style={{ top: `${slide2}%` }} src={heroShoe2} alt="shoe" className={`absolute left-[13.5%] h-[clamp(420px,70vh,700px)] transition-[top] ease-in-out duration-700 ${carouselSlide === 0 && "-z-10"}`} />
+        <img style={{ top: `${slide3}%` }} src={heroShoe3} alt="shoe" className={`absolute left-[13.5%] h-[clamp(420px,70vh,700px)] transition-[top] ease-in-out duration-700 ${carouselSlide === 1 && "-z-10"}`} />
       </div>
 
       <div className={`flex ${carouselSlide === 0 ? "flex-col" : "flex-col-reverse justify-end"} ml-auto mt-32 text-[#ededed] text-xs font-extralight text-center`}>

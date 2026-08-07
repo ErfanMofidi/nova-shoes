@@ -16,6 +16,18 @@ html {
   background-position: center;
 }
 
+#hero {
+  background: no-repeat,
+    linear-gradient(to right,
+      rgba(7, 9, 11, 1),
+      rgba(7, 9, 11, .90),
+      rgba(7, 9, 11, 1)),
+    url("./assets/hero-section/images\ \(4\).jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .explore-btn-p {
   font-family: sans-serif;
 }
@@ -62,14 +74,20 @@ html {
   background-position: center;
 }
 
-#explore {
+.explore {
   background: no-repeat,
     linear-gradient(to right,
       rgba(17, 18, 20, 1),
-      rgba(7, 9, 11, .95),
-      rgba(7, 9, 11, 1)),
+      rgba(17, 18, 20, 1),
+      rgba(7, 9, 11, 0.60),
+      rgba(7, 9, 11, 0),
+      rgba(7, 9, 11, 0)),
     url("./assets/explore/Group\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+button {
+  cursor: pointer;
 }
