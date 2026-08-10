@@ -1,6 +1,6 @@
-import whiteShoe from '../assets/display/white.png'
-import blackShoe from '../assets/display/black.png'
-import oliveShoe from '../assets/display/olive.png'
+import whiteShoe from '../assets/display/white.webp'
+import blackShoe from '../assets/display/black.webp'
+import oliveShoe from '../assets/display/olive.webp'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 

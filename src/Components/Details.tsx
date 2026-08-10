@@ -1,7 +1,7 @@
-import lightIcon from "../assets/details/light.png"
-import cushionIcon from "../assets/details/cushion.png"
-import carbonIcon from "../assets/details/carbon.png"
-import breathableIcon from "../assets/details/breathable.png"
+import lightIcon from "../assets/details/light.webp"
+import cushionIcon from "../assets/details/cushion.webp"
+import carbonIcon from "../assets/details/carbon.webp"
+import breathableIcon from "../assets/details/breathable.webp"
 import { motion } from "framer-motion"
 
 
