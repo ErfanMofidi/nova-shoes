@@ -4,7 +4,7 @@ export const Footer = () => {
 
       <div className="flex flex-col gap-2">
 
-        <div className="flex flex-row gap-2 text-[#ededed] font-medium items-center">
+        <div className="flex flex-row gap-2 text-[#ededed] text-lg font-medium items-center">
           <span>N</span>
           <span>O</span>
           <span>V</span>
