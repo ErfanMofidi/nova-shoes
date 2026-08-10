@@ -2,6 +2,8 @@ import whiteShoe from '../assets/display/white.png'
 import blackShoe from '../assets/display/black.png'
 import oliveShoe from '../assets/display/olive.png'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
+
 
 
 export const Display = () => {
@@ -28,9 +30,38 @@ export const Display = () => {
   const oliveSlide = displayShoe === "olive" ? 15 : isAnimating ? 99 : -99;
 
   return (
-    <div id="display" className="h-[clamp(500px,70vh,90vh)] flex flex-row justify-between overflow-hidden">
+    <motion.div
+      id="display"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={{
+        hidden: {},
+        visible: {
+          transition: {
+            staggerChildren: 0.15
+          }
+        }
+      }}
+      className="h-[clamp(500px,70vh,90vh)] flex flex-row justify-between overflow-hidden"
+    >
 
-      <div className="w-[20%] flex flex-col gap-4 py-28 pl-7 h-fit">
+      <motion.div
+        variants={{
+          hidden: {
+            opacity: 0,
+            x: -40
+          },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.8,
+              ease: [0.16, 1, 0.3, 1]
+            }
+          }
+        }}
+        className="w-[20%] flex flex-col gap-4 py-28 pl-7 h-fit">
         <h1 className="text-[#71717a]">NOVA ONE</h1>
         <div className="flex flex-col gap-0 text-6xl text-[#ededed] font-medium">
           <h2>LIGHTER.</h2>
@@ -40,21 +71,51 @@ export const Display = () => {
         <p className="text-[#ededed]">
           $149.00
         </p>
-        <button className="py-2 px-4 text-[#ededed] border border-[#71717a] w-fit rounded-lg hover:bg-[#A6DD03] hover:text-[#0b0b0c] transition-all ease-in-out duration-200 cursor-pointer">
+        <button className="py-2 px-4 text-[#ededed] border border-[#71717a] w-fit rounded-lg hover:bg-[#A6DD03] hover:text-[#0b0b0c] transition-all ease-in-out duration-300 cursor-pointer">
           VIEW DETAILS
         </button>
-      </div>
+      </motion.div>
 
-      <div className='h-screen w-fit overflow-x-clip relative top-[-30%] left-[0%] flex-1 flex flex-col overflow-y-hidden scroll-smooth'>
+      <motion.div
+        variants={{
+          hidden: {
+            opacity: 0,
+            x: -40
+          },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.8,
+              ease: [0.16, 1, 0.3, 1]
+            }
+          }
+        }}
+        className='h-screen w-fit overflow-x-clip relative top-[-30%] left-[0%] flex-1 flex flex-col overflow-y-hidden scroll-smooth'>
         <img style={{ top: `${whiteSlide}%` }} src={whiteShoe} alt="shoe" className={`absolute left-[4%] h-[82vh] transition-[top] ease-in-out duration-700 -rotate-6 ${displayShoe === "white" ? "z-10" : displayShoe !== "white" && previousShoe === "white" && isAnimating ? "" : "-z-10"}`} />
         <img style={{ top: `${blackSlide}%` }} src={blackShoe} alt="shoe" className={`absolute left-[4%] h-[82vh] transition-[top] ease-in-out duration-700 -rotate-6 ${displayShoe === "black" ? "z-10" : displayShoe !== "black" && previousShoe === "black" && isAnimating ? "" : "-z-10"}`} />
         <img style={{ top: `${oliveSlide}%` }} src={oliveShoe} alt="shoe" className={`absolute left-[4%] h-[82vh] transition-[top] ease-in-out duration-700 -rotate-6 ${displayShoe === "olive" ? "z-10" : displayShoe !== "olive" && previousShoe === "olive" && isAnimating ? "" : "-z-10"}`} />
-      </div>
+      </motion.div>
 
-      <div className="w-[10%] text-[#ededed] flex flex-col justify-center gap-8">
+      <motion.div
+        variants={{
+          hidden: {
+            opacity: 0,
+            x: -40
+          },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.8,
+              ease: [0.16, 1, 0.3, 1]
+            }
+          }
+        }}
+        className="w-[10%] text-[#ededed] flex flex-col justify-center gap-8">
 
         <label
-          onClick={() => {changeShoe("white");animate()}}
+          onClick={() => { changeShoe("white"); animate() }}
           htmlFor='display-white' className='flex flex-row gap-2 cursor-pointer'>
           <div className={`h-6 w-6 rounded-full ${displayShoe === "white" ? "border-2 border-[#A6DD03]" : "border-none"} flex justify-center items-center`}>
             <div className={`${displayShoe === "white" ? "bg-[#ededed]" : "bg-[#202226]"} h-4 w-4 rounded-full`} />
@@ -65,7 +126,7 @@ export const Display = () => {
         </label>
 
         <label
-          onClick={() => {changeShoe("black");animate()}}
+          onClick={() => { changeShoe("black"); animate() }}
           htmlFor='display-black' className='flex flex-row gap-2 cursor-pointer'>
           <div className={`h-6 w-6 rounded-full ${displayShoe === "black" ? "border-2 border-[#A6DD03]" : "border-none"} flex justify-center items-center`}>
             <div className={`${displayShoe === "black" ? "bg-[#ededed]" : "bg-[#202226]"} h-4 w-4 rounded-full`} />
@@ -76,7 +137,7 @@ export const Display = () => {
         </label>
 
         <label
-          onClick={() => {changeShoe("olive");animate()}}
+          onClick={() => { changeShoe("olive"); animate() }}
           htmlFor='display-olive' className='flex flex-row gap-2 cursor-pointer'>
           <div className={`h-6 w-6 rounded-full ${displayShoe === "olive" ? "border-2 border-[#A6DD03]" : "border-none"} flex justify-center items-center`}>
             <div className={`${displayShoe === "olive" ? "bg-[#ededed]" : "bg-[#202226]"} h-4 w-4 rounded-full`} />
@@ -86,7 +147,7 @@ export const Display = () => {
           </p>
         </label>
 
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
