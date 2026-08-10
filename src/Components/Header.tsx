@@ -10,20 +10,20 @@ export const Header = () => {
       </div>
 
       <div className="flex flex-row gap-10 font-light text-[#ededed] text-sm z-50">
-        <button className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-[#a6dd03] after:scale-x-0 after:origin-left after:transition-transform duration-200 hover:after:scale-100">
+        <button className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-[#a6dd03] after:scale-x-0 after:origin-left after:transition-transform duration-300 hover:text-[#a6dd03] hover:after:scale-100">
           SHOP
         </button>
-        <button className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-[#a6dd03] after:scale-x-0 after:origin-left after:transition-transform duration-200 hover:after:scale-100"
+        <button className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-[#a6dd03] after:scale-x-0 after:origin-left after:transition-transform duration-300 hover:text-[#a6dd03] hover:after:scale-100"
         >TECHNOLOGY</button>
-        <button className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-[#a6dd03] after:scale-x-0 after:origin-left after:transition-transform duration-200 hover:after:scale-100"
+        <button className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-[#a6dd03] after:scale-x-0 after:origin-left after:transition-transform duration-300 hover:text-[#a6dd03] hover:after:scale-100"
         >ABOUT</button>
-        <button className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-[#a6dd03] after:scale-x-0 after:origin-left after:transition-transform duration-200 hover:after:scale-100"
+        <button className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-[#a6dd03] after:scale-x-0 after:origin-left after:transition-transform duration-300 hover:text-[#a6dd03] hover:after:scale-100"
         >JOURNAL</button>
       </div>
 
-      <div className="text-[#ededed] text-sm font-light hover:scale-95 px-2 py-2 transition-all ease-in-out duration-200">
-        <button>CART (0)</button>
-      </div>
+      <button className="text-[#ededed] text-sm font-light hover:scale-95 px-2 py-2 transition-all ease-in-out duration-200">
+        CART (0)
+      </button>
 
     </nav>
   )
