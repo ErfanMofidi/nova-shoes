@@ -2,6 +2,7 @@ import './App.css'
 import { Details } from './Components/Details'
 import { Display } from './Components/Display'
 import { Explore } from './Components/Explore'
+import { Footer } from './Components/Footer'
 import { Header } from './Components/Header'
 import { Hero } from './Components/Hero'
 import { Reviews } from './Components/Reviews'
@@ -18,6 +19,7 @@ function App() {
         <Details />
         <Explore />
         <Reviews />
+        <Footer />
       </div>
     </div>
   )

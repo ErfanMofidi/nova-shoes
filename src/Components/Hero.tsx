@@ -20,7 +20,7 @@ export const Hero = () => {
 
 
   return (
-    <div id="hero" className="mt-24 flex flex-row px-16 h-[clamp(560px,77vh,100vh)]">
+    <div id="hero" className="pt-48 flex flex-row px-16 h-[clamp(734px,92vh,100vh)]">
       <div className="flex flex-col flex-nowrap gap-8">
 
         <h1 className="text-[#ededed] text-8xl font-medium max-w-96">
