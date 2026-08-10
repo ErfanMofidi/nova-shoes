@@ -21,7 +21,7 @@ export const Header = () => {
         >JOURNAL</button>
       </div>
 
-      <div className="text-[#ededed] text-sm font-light hover:scale-95 px-2 py-2">
+      <div className="text-[#ededed] text-sm font-light hover:scale-95 px-2 py-2 transition-all ease-in-out duration-200">
         <button>CART (0)</button>
       </div>
 
