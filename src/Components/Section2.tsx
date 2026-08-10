@@ -1,6 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react'
+import { motion } from 'framer-motion'
 
 
 
@@ -15,15 +14,6 @@ const textVariants = {
     transition: {
       duration: 0.8,
       ease: [0.16, 1, 0.3, 1] as const,
-    },
-  },
-}
-
-const textContainer = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.12,
     },
   },
 }
