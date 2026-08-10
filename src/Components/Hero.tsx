@@ -38,7 +38,7 @@ export const Hero = () => {
         </div>
 
         <button id='explore-btn' className='text-[#121213] px-4 py-3 font-medium bg-[#A6DD03] w-fit rounded-xl flex flex-row gap-2 flex-nowrap items-center cursor-pointer'>
-          <p className='explore-btn-p'>EXPLORE COLLECTION</p>
+          <p>EXPLORE COLLECTION</p>
           <ArrowRight size={20} className='-rotate-45 relative top-0' />
         </button>
       </div>
