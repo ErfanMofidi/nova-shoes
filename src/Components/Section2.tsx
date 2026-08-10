@@ -45,21 +45,6 @@ const textItem = {
 
 
 export const Section2 = () => {
-
-  const sectionRef = useRef<HTMLDivElement>(null)
-
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  })
-
-  const shoeY = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [100, -100]
-  )
-
-
   return (
     <div className="border border-[#71717a] border-l-0 border-r-0 bg-[#111214] flex flex-row max-h-[50vh] min-h-fit overflow-hidden">
       <motion.div
