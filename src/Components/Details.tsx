@@ -6,7 +6,7 @@ import breathableIcon from "../assets/details/breathable.png"
 
 export const Details = () => {
   return (
-    <div className="w-full bg-[#060609] flex flex-col gap-4 justify-center py-8 border-b border-[#71717a]">
+    <div className="w-full bg-[#060609] flex flex-col gap-4 justify-center py-14 border-b border-[#71717a]">
       <div className="text-[#ededed] text-3xl font-medium uppercase text-center w-full flex flex-col justify-center">
       <h2>
         engineered

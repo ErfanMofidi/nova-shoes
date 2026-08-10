@@ -28,7 +28,7 @@ export const Display = () => {
   const oliveSlide = displayShoe === "olive" ? 15 : isAnimating ? 99 : -99;
 
   return (
-    <div id="display" className="h-[70vh] flex flex-row justify-between overflow-hidden">
+    <div id="display" className="h-[clamp(500px,70vh,90vh)] flex flex-row justify-between overflow-hidden">
 
       <div className="w-[20%] flex flex-col gap-4 py-28 pl-7 h-fit">
         <h1 className="text-[#71717a]">NOVA ONE</h1>

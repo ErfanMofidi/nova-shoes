@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <nav className="flex flex-row justify-between px-6 py-6 bg-linear-0 to-black from-transparent z-50">
+    <nav className="flex flex-row justify-between px-6 py-6 bg-linear-0 to-black from-transparent z-50 sticky right-0 left-0 top-0">
 
       <div className="flex flex-row gap-2 text-[#ededed] font-medium items-center">
         <span>N</span>

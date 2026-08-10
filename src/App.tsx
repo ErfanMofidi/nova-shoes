@@ -4,6 +4,7 @@ import { Display } from './Components/Display'
 import { Explore } from './Components/Explore'
 import { Header } from './Components/Header'
 import { Hero } from './Components/Hero'
+import { Reviews } from './Components/Reviews'
 import { Section2 } from './Components/Section2'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Display />
         <Details />
         <Explore />
+        <Reviews />
       </div>
     </div>
   )

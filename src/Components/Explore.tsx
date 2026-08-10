@@ -2,7 +2,7 @@ import { Play } from "lucide-react"
 
 export const Explore = () =>{
   return (
-    <div id="explore" className="explore flex flex-col gap-4 h-[50vh] w-full py-20 px-14">
+    <div id="explore" className="explore flex flex-col gap-4 h-[clamp(400px,40vh,50vh)] w-full py-20 px-14">
 
       <div className="flex flex-col text-[#ededed] text-6xl font-medium uppercase">
         <h1>run.</h1>
