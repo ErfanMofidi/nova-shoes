@@ -37,11 +37,12 @@ const textItem = {
 export const Section2 = () => {
   return (
     <div className="border border-[#71717a] border-l-0 border-r-0 bg-[#111214] flex flex-row max-h-[50vh] min-h-fit overflow-hidden">
+      <div className='w-[33%] bg-[#0b0b0c] pl-8 py-16'>
       <motion.div
         variants={textVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }} className="w-[33%] bg-[#0b0b0c] pl-8 py-16 flex flex-col gap-8">
+        viewport={{ once: true, amount: 0.3 }} className="w-full flex flex-col gap-8">
 
         <motion.h2 variants={textItem} className="text-[#ededed] text-5xl font-medium w-[61%]">
           BUILT FOR EVERY RUN.
@@ -51,11 +52,12 @@ export const Section2 = () => {
           NOVA combines cutting-edge technology with minimalist design to deliver unmatched comfort, energy return, and style.
         </motion.p>
 
-        <motion.button variants={textItem} className='text-[#ededed] flex flex-row gap-2 items-center w-fit cursor-pointer hover:text-[#A6DD03] transition-all ease-in duration-300 group'>
+        <motion.button variants={textItem} className='text-[#ededed] flex flex-row gap-2 items-center w-fit cursor-pointer hover:text-[#A6DD03] transition-colors ease-in duration-300 group'>
           <p>LEARN MORE</p>
           <ArrowRight size={15} className='relative top-0 group-hover:translate-x-1 transition-all ease-in-out duration-300' />
         </motion.button>
       </motion.div>
+      </div>
 
       <div id='section2-shoe-container' className="w-[67%] border-l border-[#71717a] z-20">
       </div>
