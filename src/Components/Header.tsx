@@ -31,7 +31,7 @@ export const Header = () => {
           pt-5
           md:px-6
           md:pt-6
-          bg-gradient-to-b
+          bg-linear-to-b
           from-black
           to-transparent
           backdrop-blur-[2px]
@@ -55,7 +55,7 @@ export const Header = () => {
           <div className="
             flex
             items-center
-            gap-[3px]
+            gap-0.75
             text-[#ededed]
             text-[17px]
             font-medium
@@ -245,7 +245,7 @@ export const Header = () => {
             className="
               fixed
               inset-0
-              z-[100]
+              z-100
               bg-[#080809]
               md:hidden
             "
@@ -268,7 +268,7 @@ export const Header = () => {
               <div className="
                 flex
                 items-center
-                gap-[3px]
+                gap-0.75
                 text-[#ededed]
                 text-[17px]
                 font-medium
@@ -352,7 +352,7 @@ export const Header = () => {
                     py-5
                     text-left
                     border-b
-                    border-white/[0.06]
+                    border-white/6
                   "
                 >
 

@@ -167,8 +167,8 @@ export const Display = () => {
           }}
           className="
             relative
-            h-[320px]
-            mt-[-5px]
+            h-80
+            -mt-1.25
             overflow-hidden
           "
         >
@@ -181,10 +181,10 @@ export const Display = () => {
             top-1/2
             -translate-x-1/2
             -translate-y-1/2
-            w-[260px]
-            h-[100px]
+            w-65
+            h-25
             rounded-full
-            bg-[#A6DD03]/[0.055]
+            bg-[#A6DD03]/5.5
             blur-[70px]
           " />
 
@@ -256,7 +256,7 @@ export const Display = () => {
           }}
           className="
             border-t
-            border-white/[0.08]
+            border-white/8
             pt-5
           "
         >
