@@ -102,9 +102,9 @@ export const Section2 = () => {
                 text-[#ededed]
                 text-[clamp(2.7rem,13vw,4rem)]
                 leading-[0.9]
-                tracking-[-0.05em]
+                tracking-tighter
                 font-medium
-                max-w-[330px]
+                max-w-82.5
               "
             >
               BUILT FOR
@@ -193,7 +193,7 @@ export const Section2 = () => {
           className="
             relative
             w-full
-            h-[320px]
+            h-80
             border-t
             border-[#71717a]
             overflow-hidden
@@ -205,10 +205,10 @@ export const Section2 = () => {
           <div
             className="
               absolute
-              w-[280px]
-              h-[120px]
+              w-70
+              h-30
               rounded-full
-              bg-[#A6DD03]/[0.06]
+              bg-[#A6DD03]/6
               blur-[80px]
               left-1/2
               top-1/2
