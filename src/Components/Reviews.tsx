@@ -83,8 +83,8 @@ export const Reviews = () => {
         className="
           shrink-0
           w-[82vw]
-          max-w-[340px]
-          min-h-[270px]
+          max-w-85
+          min-h-67.5
           text-[#ededed]
           bg-[#111214]
           p-5
@@ -93,7 +93,7 @@ export const Reviews = () => {
           justify-between
           rounded-xl
           border
-          border-white/[0.06]
+          border-white/6
           snap-start
         "
       >
@@ -144,7 +144,7 @@ export const Reviews = () => {
           gap-3
           pt-5
           border-t
-          border-white/[0.08]
+          border-white/8
           "
         >
 
@@ -271,7 +271,7 @@ export const Reviews = () => {
                 text-[#ededed]
                 text-[clamp(2.3rem,11vw,3.5rem)]
                 leading-[0.9]
-                tracking-[-0.05em]
+                tracking-tighter
                 font-medium
                 uppercase
                 "
@@ -323,7 +323,7 @@ export const Reviews = () => {
             text-sm
             leading-6
             mt-5
-            max-w-[300px]
+            max-w-75
           ">
             Join a community that's always moving forward.
           </p>
