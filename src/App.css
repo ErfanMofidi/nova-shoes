@@ -85,9 +85,21 @@ html {
       rgba(7, 9, 11, 0),
       rgba(7, 9, 11, 0)),
     url("./assets/explore/Group\ 1.webp");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (width < 48rem) {
+  .explore {
+    background: no-repeat,
+      linear-gradient(to bottom,
+        rgba(17, 18, 20, 1),
+        rgba(7, 9, 11, 0.60),
+        rgba(7, 9, 11, .8)),
+      url("./assets/explore/Group\ 1\ phone.png");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 button {
