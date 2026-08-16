@@ -194,10 +194,12 @@ export const Reviews = () => {
 
   return (
     <section
+      id="reviews"
       className="
         bg-[#060609]
         border-t
         border-[#71717a]
+        scroll-mt-20
       "
     >
 
@@ -491,7 +493,7 @@ export const Reviews = () => {
                 ? "opacity-30"
                 : "group-hover:text-[#A6DD03] group-hover:translate-x-1"
               }
-  `}
+            `}
           />
 
         </button>

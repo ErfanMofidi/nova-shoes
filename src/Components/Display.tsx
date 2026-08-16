@@ -55,8 +55,9 @@ export const Display = () => {
         relative
         overflow-hidden
         bg-[#0b0b0c]
-        border-y
-        border-[#71717a]/30
+        border-b
+        border-[#71717a]
+        scroll-mt-20
       "
     >
 

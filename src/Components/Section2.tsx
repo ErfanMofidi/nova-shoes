@@ -34,6 +34,7 @@ const textItem = {
 export const Section2 = () => {
   return (
     <section
+      id='about'
       className="
         border
         border-[#71717a]
@@ -41,6 +42,7 @@ export const Section2 = () => {
         border-r-0
         bg-[#111214]
         overflow-hidden
+        scroll-mt-20
       "
     >
 

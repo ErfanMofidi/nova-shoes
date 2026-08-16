@@ -6,10 +6,10 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    "SHOP",
-    "TECHNOLOGY",
-    "ABOUT",
-    "JOURNAL"
+    { name: "SHOP", tag: "display" },
+    { name: "TECHNOLOGY", tag: "details" },
+    { name: "ABOUT", tag: "about" },
+    { name: "JOURNAL", tag: "reviews" }
   ]
 
   return (
@@ -175,8 +175,9 @@ export const Header = () => {
 
             {navItems.map((item) => (
 
-              <button
-                key={item}
+              <a
+                href={`#${item.tag}`}
+                key={item.name}
                 className="
                   relative
                   cursor-pointer
@@ -195,8 +196,8 @@ export const Header = () => {
                   hover:after:scale-x-100
                 "
               >
-                {item}
-              </button>
+                {item.name}
+              </a>
 
             ))}
 
@@ -328,7 +329,7 @@ export const Header = () => {
               {navItems.map((item, index) => (
 
                 <motion.button
-                  key={item}
+                  key={item.name}
                   variants={{
                     hidden: {
                       opacity: 0,
@@ -356,7 +357,9 @@ export const Header = () => {
                   "
                 >
 
-                  <span className="
+                  <a
+                    href={`#${item.tag}`}
+                    className="
                     text-[#ededed]
                     text-[2rem]
                     font-medium
@@ -365,8 +368,8 @@ export const Header = () => {
                     duration-300
                     group-hover:text-[#A6DD03]
                   ">
-                    {item}
-                  </span>
+                    {item.name}
+                  </a>
 
 
                   <span className="

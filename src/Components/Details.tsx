@@ -74,11 +74,13 @@ export const Details = () => {
 
   return (
     <section
+      id="details"
       className="
         w-full
         bg-[#060609]
         border-b
         border-[#71717a]
+        scroll-mt-20
       "
     >
 
