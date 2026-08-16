@@ -34,6 +34,7 @@ Error generating stack: `+e.message+`
             h-1.5\r
             rounded-full\r
             bg-[#A6DD03]\r
+            animate-pulse\r
             `}),(0,U.jsx)(`span`,{className:`\r
             text-[#71717a]\r
             text-[9px]\r
@@ -320,6 +321,7 @@ Error generating stack: `+e.message+`
               h-1.5\r
               rounded-full\r
               bg-[#A6DD03]\r
+              animate-pulse\r
             `}),(0,U.jsx)(`span`,{className:`\r
               text-[#71717a]\r
               text-[9px]\r
@@ -791,7 +793,7 @@ Error generating stack: `+e.message+`
               -translate-x-1/2\r
             `},w),e[16]=w,e[17]=ne);let T=i[t],re,ie,E;e[18]===Symbol.for(`react.memo_cache_sentinel`)?(re={opacity:0,x:80,rotate:-12,scale:.85},ie={opacity:1,x:0,rotate:-4,scale:1},E={opacity:0,x:-80,rotate:8,scale:.9},e[18]=re,e[19]=ie,e[20]=E):(re=e[18],ie=e[19],E=e[20]);let ae;e[21]===Symbol.for(`react.memo_cache_sentinel`)?(ae={duration:.8,ease:[.16,1,.3,1]},e[21]=ae):ae=e[21];let oe;e[22]!==t||e[23]!==T?(oe=(0,U.jsx)(Fc,{mode:`popLayout`,children:(0,U.jsx)(X.img,{src:T,alt:`NOVA sneaker`,initial:re,animate:ie,exit:E,transition:ae,className:`\r
                 absolute\r
-                w-[125%]\r
+                w-full\r
                 max-w-none\r
                 h-auto\r
                 left-1/2\r
@@ -870,6 +872,7 @@ Error generating stack: `+e.message+`
                   h-1.5\r
                   rounded-full\r
                   bg-[#A6DD03]\r
+                  animate-pulse\r
                   `}),`Community`]}),e[6]=f):f=e[6];let p;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,U.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[f,(0,U.jsxs)(`h2`,{className:`\r
                 text-[#ededed]\r
                 text-[clamp(2.3rem,11vw,3.5rem)]\r
