@@ -230,7 +230,7 @@ export const Hero = () => {
               }}
               className="
                 absolute
-                w-[125%]
+                w-full
                 max-w-none
                 h-auto
                 left-1/2

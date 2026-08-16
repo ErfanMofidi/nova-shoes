@@ -76,6 +76,7 @@ export const Explore = () => {
               h-1.5
               rounded-full
               bg-[#A6DD03]
+              animate-pulse
             "
           />
 
